@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background-color: rgb(165, 253, 212);
+  height: 100%;
+  margin: 0;
+}
+.home {
+  min-height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.home-logo {
+  font-size: 35px;
+  padding: 20px 50px;
+  font-weight: bold;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(20, 194, 112);
+  color: black;
+}
+
+.Search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 250px;
+}
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+.search-box input {
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  padding: 8px 40px 8px 10px;
+  border: 1px solid #d8cbcb;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+.search-box input::placeholder {
+  color: white;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+.search-icon:hover{
+  color: rgb(20, 194, 112);
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  padding-right: 50px;
+}
+
+.description {
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: move 30s linear infinite;
+}
+@keyframes move {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.duration {
+  padding: 20px;
+  background-color: rgb(9, 117, 67);
+  color: white;
+  font-size: 20px;
+}
+.duration ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.duration li {
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+.duration li:hover {
+  color: black;
+}
+
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  background: linear-gradient(to right,#10121b,#2d0b00);
+  color: white; 
+  position: relative;
+  padding: 100px 0 30px;
+  line-height: 20px;
+  bottom: 0;
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.column{
+  flex-basis: 25%;
+  padding: 10px;
+}
+.column:nth-child(2){
+  flex-basis: 18%;
+  
+}
+.footer-logo{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.footer-logo p {
+  font-size: 15px;
+}
+.footer .social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+ .footer h3 {
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+.email{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+}
+.footer .social ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.footer .social li {
+  font-size: 30px;
+}
+.footer .social a {
+  color: white;
+  transition: color 0.3s ease;
+}
+.footer .social a:hover {
+  color: rgb(20, 194, 112);
+}
+
+hr{
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.copyright{
+  text-align: center;
+}
+
+
+.temp-container {
+  place-self: center;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(20, 194, 112);
+  width: 50%;
+  height: 75vh;
+  margin: 50px;
+}
+.top-p {
+  display: flex;
+  padding-right: 500px;
+  font-size: 25px;
+  color: rgb(47, 7, 7);
+}
+.weather-icon {
+  width: 200px;
+  height: 200px;
+}
+.icon-desc{
+  font-size: 25px;
+  color: black;
+}
+.info-container {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+.temprature,
+.city {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+.weather-data{
+  display: flex;
+  justify-content: space-between;
+  gap: 230px;
+  font-size: 25px;
+  color: black;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.weather-data .col{
+  display: flex;
+  align-items: flex-start;
+}
+.icon{
+  font-size: 30px;
+  padding-right: 10px;
+}
